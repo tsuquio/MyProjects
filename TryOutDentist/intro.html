@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dizon Dental Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+    <body>
+    <div class="hero">
+        <nav>
+            <img src="logo.png" alt="">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <a href="#">Our Partnership Program</a>
+        </nav>
+                <div class="text-box">
+                <h1>Dizon Dental Clinic</h1>
+                <p>Dizon Dental Clinic is the most popular clinic in Parola Cainta by providing checkup and cleaning of teeth.</p>
+                <button id="open-popup-btn" class="appointment-btn">Book an Appointment</button>
+                <button>See Plans</button>  
+        </div>
+        <div id="appointment-popup" class="popup-container">
+            <div class="popup-content">
+                <span id="close-popup-btn" class="close-popup">&times;</span>
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="date">Appointment Date:</label>
+                    <input type="date" id="date" name="date" required>
+    
+                    <label for="time">Appointment Time:</label>
+                    <input type="time" id="time" name="time" required>
+    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+        <script src="scripts.js"></script>
+        
+
+    </body>
+    
+</html>
