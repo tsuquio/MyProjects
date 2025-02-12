@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    text-shadow: 2px 2px 5px #111;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 0.2;
+    filter: brightness(0.5rem), blur(1.2rem);
+
+}
+
+#background-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0,   
+   0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  }
+
+  
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #111;
+    width: 100%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.game-slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.game-item {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    transition: transform 0.3s;
+}
+
+.game-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+}
+
+.game-item:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+
+
+
+
+.login-button {
+    display: inline-flex;         
+    align-items: center;       
+    color: #fff;                  
+    background-color: #8b0000;    
+    padding: 0.5rem 1rem;          
+    border-radius: 3px;            
+    text-decoration: none;         
+    font-weight: bold;             
+    transition: background 0.3s;    
+    border: none;          
+      
+}
+
+
+.login-button i {
+    margin-right: 0.5rem;         
+}
+
+
+.login-button:hover {
+    background-color: #6b0000;     
+}
+
+.login-button .material-symbols-outlined {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+    float: left;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.movie-slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.movie-item {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.movie-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+}
+
+.movie-item:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+footer {
+    background:  rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin-top: 200px;
+    text-align: center;
+    padding: 1rem 0;
+}
