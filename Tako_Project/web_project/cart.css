@@ -1,0 +1,147 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.cart-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-items li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-items img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-items .total {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.cart-items .empty {
+    text-align: center;
+    color: #888;
+}
+
+.back-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: -400px; 
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease; 
+    z-index: 1000;
+    overflow-y: auto; 
+}
+
+.cart-popup.show {
+    right: 0; 
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-header h1 {
+    margin: 0;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 20px;
+}
+
+.cart-items li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-items img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-total {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0c14b;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-items .empty {
+    text-align: center;
+    color: #888;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.cart-item-details {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.cart-item-quantity button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.cart-item-remove {
+    cursor: pointer;
+}

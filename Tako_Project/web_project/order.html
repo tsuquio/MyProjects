@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="takologo.jpg">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="cart.html">🛒</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+
+        <div class="order" id="Order">
+            <h1><span>Order</span> Now</h1>
+            <div class="order_main">
+                <div class="order_image">
+                    <img src="order.jpg">
+                </div>
+
+                <form action="#" id="checkout-form">
+                    <div id="order-items-list">
+                        <h2>Order Summary:</h2>
+                        <ul id="order-items"></ul>
+                        <ul id="order-total-display"></ul>
+                    </div>
+
+                    <div class="input">
+                        <p>Name</p>
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="input">
+                        <p>Email</p>
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="input">
+                        <p>Number</p>
+                        <input type="number" id="phone" placeholder="Contact #" required>
+                    </div>
+
+                    <div class="input">
+                        <p>Note</p>
+                        <input placeholder="Eg. allergies or request" id="note">
+                    </div>
+
+                    <div class="input">
+                        <p>Address</p>
+                        <input placeholder="House No., street, city." id="address" required>
+                    </div>
+
+                    <input type="hidden" id="cart-data" name="cart-data">
+                    <input type="hidden" id="order-total" name="order-total">
+
+                    <button type="button" id="place-order-btn" class="order_btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <h2>Select Payment Method</h2>
+            <button id="cod-btn" class="payment-option">Cash on Delivery</button>
+            <button id="gcash-btn" class="payment-option">Gcash</button>
+
+            
+            <div id="gcash-details" class="hidden">
+                
+                <!-- Change gcash number here! -->
+                <p>Seller's Gcash Number: <strong>09123456789</strong></p> 
+            </div>
+
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="order.js"></script> 
+</body>
+</html>

@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<section id="Home">
+
+  <div class="cart-panel">
+    <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <button class="close-cart">X</button>
+    </div>
+    <ul class="cart-items">
+        <li class="empty">Your cart is empty</li>
+    </ul>
+    <div class="cart-total">
+        <strong>Total:</strong> <span class="total-price">P0.00</span>
+    </div>
+    <button id ="checkoutButton" class="checkout-button">CHECK OUT</button>
+</div>
+
+<nav>
+
+<div class="logo">
+<img src="takologo.jpg">
+</div>
+
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="order.html">Order</a></li>
+<li><a href="cart.html">🛒</a></li>
+</ul>
+
+<div class="icon">
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-heart"></i>
+<i class="fa-solid fa-cart-shopping"></i>
+</div>
+
+</nav>
+
+<div class="menu" id="Menu">
+
+<h1>Our<span>Menu</span></h1>
+
+<div class="menu_box">
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheese.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Cheese Takoyaki</h2>
+<p>
+  Original cheese takoyaki 4 pcs.
+</p>
+<h3>P55.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheese Takoyaki', '55', 'cheese.jpeg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button>
+</div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheese.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Cheese Takoyaki</h2>
+<p>
+  Original cheese takoyaki 8 pcs.
+</p>
+<h3>P95.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheese Takoyaki', '95', 'cheese.jpeg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheese.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Cheese Takoyaki</h2>
+<p>
+  Original cheese takoyaki 12 pcs.
+</p>
+<h3>P140.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheese Takoyaki', '140', 'cheese.jpeg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheese.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Cheese Takoyaki</h2>
+<p>
+  Original cheese takoyaki 24 pcs.
+</p>
+<h3>P200.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheese Takoyaki', '200', 'cheese.jpeg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheeseoverload.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Cheese Overload</h2>
+<p>
+  Original cheese overload takoyaki 4 pcs.
+</p>
+<h3>P60.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheese Overload', '60', 'cheeseoverload.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheeseoverload.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+<div class="menu_info">
+<h2>Cheese Overload</h2>
+<p>
+  Original cheese overload takoyaki 8 pcs.
+</p>
+<h3>P105.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheese Overload', '105', 'cheeseoverload.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheeseoverload.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Cheese Overload</h2>
+<p>
+  Original cheese overload takoyaki 12 pcs.
+</p>
+<h3>P155.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheese Overload', '155', 'cheeseoverload.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheeseoverload.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Cheese Overload</h2>
+<p>
+Original cheese overload takoyaki 24 pcs.
+</p>
+<h3>P300.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheese Overload', '300', 'cheeseoverload.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="bacon.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Bacon</h2>
+<p>
+Original Bacon Takoyaki 4pcs.
+</p>
+<h3>P65.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Bacon', '65', 'bacon.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="bacon.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Bacon</h2>
+<p>
+  Original Bacon Takoyaki 8pcs.
+</p>
+<h3>P110.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Bacon', '110', 'bacon.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="bacon.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Bacon</h2>
+<p>
+  Original Bacon Takoyaki 12pcs.
+</p>
+<h3>P165.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Bacon', '165', 'bacon.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="bacon.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Bacon</h2>
+<p>
+  Original Bacon Takoyaki 24pcs.
+</p>
+<h3>P310.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Bacon', '310', 'bacon.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div>
+
+<div class="menu_card">
+
+  <div class="menu_image">
+  <img src="crab.jpg">
+  </div>
+
+  <div class="small_card">
+  <i class="fa-solid fa-heart"></i>
+  </div>
+
+  <div class="menu_info">
+  <h2>Crab</h2>
+  <p>
+    Original Crab Takoyaki 4pcs.
+  </p>
+  <h3>P65.00</h3>
+  <div class="menu_icon">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star-half-stroke"></i>
+  </div>
+  <button class="cart-button" onclick="event.stopPropagation(); addToCart('Crab', '65', 'crab.jpg')">
+    <i class="fas fa-shopping-cart"></i> Add to Cart</button>  </div>
+
+  </div> 
+
+  <div class="menu_card">
+
+    <div class="menu_image">
+    <img src="crab.jpg">
+    </div>
+
+    <div class="small_card">
+    <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <div class="menu_info">
+    <h2>Crab</h2>
+    <p>
+      Original Crab Takoyaki 8pcs.
+    </p>
+    <h3>P110.00</h3>
+    <div class="menu_icon">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <button class="cart-button" onclick="event.stopPropagation(); addToCart('Crab', '110', 'crab.jpg')">
+      <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+    </div> 
+
+    <div class="menu_card">
+
+      <div class="menu_image">
+      <img src="crab.jpg">
+      </div>
+
+      <div class="small_card">
+      <i class="fa-solid fa-heart"></i>
+      </div>
+
+      <div class="menu_info">
+      <h2>Crab</h2>
+      <p>
+        Original Crab Takoyaki 12pcs.
+      </p>
+      <h3>P165.00</h3>
+      <div class="menu_icon">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+      <button class="cart-button" onclick="event.stopPropagation(); addToCart('Crab', '165', 'crab.jpg')">
+        <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+      </div> 
+
+      <div class="menu_card">
+
+        <div class="menu_image">
+        <img src="crab.jpg">
+        </div>
+
+        <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="menu_info">
+        <h2>Crab</h2>
+        <p>
+          Original Crab Takoyaki 24pcs.
+        </p>
+        <h3>P310.00</h3>
+        <div class="menu_icon">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <button class="cart-button" onclick="event.stopPropagation(); addToCart('Crab', '310', 'crab.jpg')">
+          <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+        </div> 
+
+        <div class="menu_card">
+
+          <div class="menu_image">
+          <img src="shrimp.jpg">
+          </div>
+
+          <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+          <h2>Shrimp</h2>
+          <p>
+            Original Shrimp Takoyaki 4pcs.
+          </p>
+          <h3>P70.00</h3>
+          <div class="menu_icon">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <button class="cart-button" onclick="event.stopPropagation(); addToCart('Shrimp', '70', 'shrimp.jpg')">
+            <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+          </div> 
+
+          <div class="menu_card">
+
+            <div class="menu_image">
+            <img src="shrimp.jpg">
+            </div>
+
+            <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+            <h2>Shrimp</h2>
+            <p>
+              Original Shrimp Takoyaki 8pcs.
+            </p>
+            <h3>P125.00</h3>
+            <div class="menu_icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <button class="cart-button" onclick="event.stopPropagation(); addToCart('Shrimp', '125', 'shrimp.jpg')">
+              <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+            </div> 
+
+            <div class="menu_card">
+
+              <div class="menu_image">
+              <img src="shrimp.jpg">
+              </div>
+
+              <div class="small_card">
+              <i class="fa-solid fa-heart"></i>
+              </div>
+
+              <div class="menu_info">
+              <h2>Shrimp</h2>
+              <p>
+                Original Shrimp Takoyaki 12pcs.
+              </p>
+              <h3>P180.00</h3>
+              <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <button class="cart-button" onclick="event.stopPropagation(); addToCart('Shrimp', '180', 'shrimp.jpg')">
+                <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+              </div> 
+
+              <div class="menu_card">
+
+                <div class="menu_image">
+                <img src="shrimp.jpg">
+                </div>
+
+                <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                <h2>Shrimp</h2>
+                <p>
+                  Original Shrimp Takoyaki 24pcs.
+                </p>
+                <h3>360.00</h3>
+                <div class="menu_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <button class="cart-button" onclick="event.stopPropagation(); addToCart('Shrimp', '360', 'shrimp.jpg')">
+                  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+                </div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="classicoctobits.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Classic Octobits</h2>
+<p>
+Original Octopus Takoyaki 4pcs.
+</p>
+<h3>P70.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Classic Octobits', '70', 'classicoctobits.jpg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+  <div class="menu_image">
+  <img src="classicoctobits.jpg">
+  </div>
+
+  <div class="small_card">
+  <i class="fa-solid fa-heart"></i>
+  </div>
+
+  <div class="menu_info">
+  <h2>Classic Octobits</h2>
+  <p>
+  Original Octopus Takoyaki 8pcs.
+  </p>
+  <h3>P125.00</h3>
+  <div class="menu_icon">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star-half-stroke"></i>
+  </div>
+  <button class="cart-button" onclick="event.stopPropagation(); addToCart('Classic Octobits', '125', 'classicoctobits.jpg')">
+    <i class="fas fa-shopping-cart"></i> Add to Cart</button>  </div>
+
+  </div> 
+
+  <div class="menu_card">
+
+    <div class="menu_image">
+    <img src="classicoctobits.jpg">
+    </div>
+
+    <div class="small_card">
+    <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <div class="menu_info">
+    <h2>Classic Octobits</h2>
+    <p>
+    Original Octopus Takoyaki 12pcs.
+    </p>
+    <h3>P180.00</h3>
+    <div class="menu_icon">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <button class="cart-button" onclick="event.stopPropagation(); addToCart('Classic Octobits', '180', 'classicoctobits.jpg')">
+      <i class="fas fa-shopping-cart"></i> Add to Cart</button>    </div>
+
+    </div> 
+
+    <div class="menu_card">
+
+      <div class="menu_image">
+      <img src="classicoctobits.jpg">
+      </div>
+
+      <div class="small_card">
+      <i class="fa-solid fa-heart"></i>
+      </div>
+
+      <div class="menu_info">
+      <h2>Classic Octobits</h2>
+      <p>
+      Original Octopus Takoyaki 24pcs.
+      </p>
+      <h3>P360.00</h3>
+      <div class="menu_icon">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+      <button class="cart-button" onclick="event.stopPropagation(); addToCart('Classic Octobits', '360', 'classicoctobits.jpg')">
+      <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+      </div> 
+
+<div class="menu_card">
+
+<div class="menu_image">
+<img src="cheesyoctobits.jpg">
+</div>
+
+<div class="small_card">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div class="menu_info">
+<h2>Cheesy Octobits</h2>
+<p>
+Cheesy Octopus Takoyaki 4pcs.
+</p>
+<h3>P80.00</h3>
+<div class="menu_icon">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheesy Octobits', '80', 'cheesyoctobitspeg')">
+  <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+</div> 
+
+<div class="menu_card">
+
+  <div class="menu_image">
+  <img src="cheesyoctobits.jpg">
+  </div>
+
+  <div class="small_card">
+  <i class="fa-solid fa-heart"></i>
+  </div>
+
+  <div class="menu_info">
+  <h2>Cheesy Octobits</h2>
+  <p>
+  Cheesy Octopus Takoyaki 8pcs.
+  </p>
+  <h3>P135.00</h3>
+  <div class="menu_icon">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star-half-stroke"></i>
+  </div>
+  <button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheesy Octobits', '135', 'cheesyoctobitspeg')">
+    <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+  </div> 
+
+  <div class="menu_card">
+
+    <div class="menu_image">
+    <img src="cheesyoctobits.jpg">
+    </div>
+
+    <div class="small_card">
+    <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <div class="menu_info">
+    <h2>Cheesy Octobits</h2>
+    <p>
+    Cheesy Octopus Takoyaki 12pcs.
+    </p>
+    <h3>P190.00</h3>
+    <div class="menu_icon">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheesy Octobits', '190', 'cheesyoctobitspeg')">
+      <i class="fas fa-shopping-cart"></i> Add to Cart</button></div>
+
+    </div> 
+
+    <div class="menu_card">
+
+      <div class="menu_image">
+      <img src="cheesyoctobits.jpg">
+      </div>
+
+      <div class="small_card">
+      <i class="fa-solid fa-heart"></i>
+      </div>
+
+      <div class="menu_info">
+      <h2>Cheesy Octobits</h2>
+      <p>
+      Cheesy Octopus Takoyaki 24pcs.
+      </p>
+      <h3>P370.00</h3>
+      <div class="menu_icon">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      </div>
+      <button class="cart-button" onclick="event.stopPropagation(); addToCart('Cheesy Octobits', '370', 'cheesyoctobitspeg')"> Add to Cart</button>      </div>
+
+      </div> 
+
+</div>
+
+</div>
+
+<script>
+  function addToCart(itemName, price, image) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let existingItem = cart.find(item => item.name === itemName);
+
+      if (existingItem) {
+          existingItem.quantity++;
+      } else {
+          cart.push({
+              name: itemName,
+              price: parseFloat(price),
+              image: 'images/' + image, 
+              quantity: 1
+          });
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartDisplay();
+  }
+
+  function updateCartDisplay() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let cartItems = document.querySelector('.cart-items');
+      cartItems.innerHTML = '';
+
+      if (cart.length === 0) {
+          cartItems.innerHTML = '<li class="empty">Your cart is empty</li>';
+      } else {
+          cart.forEach((item, index) => {
+              let li = document.createElement('li');
+              let quantity = item.quantity || 1;
+              let totalPrice = (item.price * quantity).toFixed(2);
+
+              li.innerHTML = `
+                  <img src="${item.image}" alt="${item.name}">
+                  <span>${item.name}</span>
+                  <div>
+                      <button class="quantity-btn minus" data-index="${index}">-</button>
+                      <span>${quantity}</span>
+                      <button class="quantity-btn plus" data-index="${index}">+</button>
+                  </div>
+                  <span>P${totalPrice}</span>
+                  <button class="remove-btn" data-index="${index}">Remove</button>
+              `;
+              cartItems.appendChild(li);
+          });
+      }
+      calculateTotal();
+  }
+
+  function calculateTotal() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let total = cart.reduce((sum, item) => {
+          return sum + (item.price * item.quantity);
+      }, 0);
+      document.querySelector('.total-price').textContent = `P${total.toFixed(2)}`;
+  }
+
+  function removeItem(index) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartDisplay();
+  }
+
+  function changeQuantity(index, change) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      if (cart[index].quantity + change > 0) {
+          cart[index].quantity += change;
+          localStorage.setItem('cart', JSON.stringify(cart));
+          updateCartDisplay();
+      }
+  }
+
+  document.querySelector('nav ul li a[href="cart.html"]').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.querySelector('.cart-panel').classList.add('show');
+      updateCartDisplay();
+  });
+
+  document.querySelector('.close-cart').addEventListener('click', () => {
+      document.querySelector('.cart-panel').classList.remove('show');
+  });
+
+  document.addEventListener('click', function(event) {
+      if (event.target.classList.contains('remove-btn')) {
+          let index = event.target.dataset.index;
+          removeItem(index);
+      } else if (event.target.classList.contains('plus')) {
+          let index = event.target.dataset.index;
+          changeQuantity(index, 1);
+      } else if (event.target.classList.contains('minus')) {
+          let index = event.target.dataset.index;
+          changeQuantity(index, -1);
+      }
+  });
+
+  document.getElementById('checkoutButton').addEventListener('click', function() {
+      window.location.href = 'order.html'; 
+  });
+</script>
+
+</body>
+
+</html>
